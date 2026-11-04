@@ -6,9 +6,11 @@ I use this portfolio to present my work, document my growth as an engineer, and 
 
 ## 👨‍💻 About Me
 
-Hi, I'm **Bhavik Pandit**, a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning.
+Hi, I'm **Bhavik Pandit**, a second-year **B.Tech Computer Science and Engineering (Artificial Intelligence and Machine Learning)** student.
 
 I'm interested in building practical software solutions, exploring AI/ML technologies, and developing projects that solve real-world problems.
+
+I am currently in my second year of the B.Tech CSE (AI/ML) program and continue to build practical projects alongside my coursework.
 
 My current interests include:
 
