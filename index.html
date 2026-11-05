@@ -24,7 +24,11 @@
   "url": "https://your-domain.example/",
   "email": "mailto:YOUR_EMAIL@example.com",
   "jobTitle": "Prompt Engineer & AI Evaluator",
-  "sameAs": ["https://www.linkedin.com/in/bhavik-pandit-9b416a284/"]
+  "sameAs": [
+    "https://www.linkedin.com/in/bhavik-pandit-9b416a284/",
+    "https://github.com/panditbhavik15",
+    "https://scholar.google.com/citations?hl=en&user=XPteZgkAAAAJ"
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -383,9 +387,8 @@
     </p>
 
     <div class="titleblock reveal" style="animation-delay:.2s">
-      <div class="tb-cell"><p class="tb-label mono">ROLE</p><p class="tb-value">Prompt Engineer &amp; AI Evaluator</p></div>
       <div class="tb-cell"><p class="tb-label mono">STATUS</p><p class="tb-value">Seeking AI/ML internship</p></div>
-      <div class="tb-cell"><p class="tb-label mono">BATCH</p><p class="tb-value">2024 — Present, Year 2</p></div>
+      <div class="tb-cell"><p class="tb-label mono">BATCH</p><p class="tb-value">2025— Present, Year 2</p></div>
       <div class="tb-cell"><p class="tb-label mono">STACK</p><p class="tb-value">Python · C · HTML/CSS</p></div>
     </div>
   </section>
@@ -456,6 +459,7 @@
           <li>Google Colab</li>
           <li>Claude API</li>
           <li>Perplexity AI</li>
+          <li>Docker</li>
         </ul>
       </div>
     </div>
@@ -602,7 +606,7 @@
       <div>
         <h2>Let's build something.</h2>
         <p>Open to AI/ML internships, prompt-engineering work, and anything that involves finishing a real tool. Reach out directly — I reply fastest by email.</p>
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <form class="contact-form" action="mailto:kking92451@gmail.com" method="POST" enctype="text/plain">
           <div>
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
@@ -625,7 +629,9 @@
       </div>
       <div class="contact-links">
         <a href="mailto:YOUR_EMAIL@example.com">Email <span class="cl-tag mono">YOUR_EMAIL@example.com</span></a>
-        <a href="https://www.linkedin.com/in/bhavik-pandit-9b416a284/" target="_blank" rel="noopener">LinkedIn <span class="cl-tag mono">/in/bhavik-pandit</span></a>
+        <a href="https://www.linkedin.com/in/bhavik-pandit-9b416a284/" target="_blank" rel="noopener">LinkedIn <span class="cl-tag mono">/in/bhavik-pandit-9b416a284</span></a>
+        <a href="https://github.com/panditbhavik15" target="_blank" rel="noopener">GitHub <span class="cl-tag mono">/panditbhavik15</span></a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=XPteZgkAAAAJ&amp;view_op=list_works" target="_blank" rel="noopener">Google Scholar <span class="cl-tag mono">/citations?user=XPteZgkAAAAJ</span></a>
       </div>
     </div>
   </section>
@@ -684,7 +690,16 @@
       if (!valid) {
         event.preventDefault();
         status.textContent = 'Please correct the highlighted fields.';
+        return;
       }
+      event.preventDefault();
+      const name = form.elements.name.value.trim();
+      const email = form.elements.email.value.trim();
+      const message = form.elements.message.value.trim();
+      const subject = encodeURIComponent(`Portfolio message from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:kking92451@gmail.com?subject=${subject}&body=${body}`;
+      status.textContent = 'Your email app is opening.';
     });
   })();
 </script>
